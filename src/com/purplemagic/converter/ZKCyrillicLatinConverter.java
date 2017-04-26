@@ -8,6 +8,8 @@ import org.zkoss.bind.annotation.Command;
 import org.zkoss.bind.annotation.NotifyChange;
 
 public class ZKCyrillicLatinConverter {
+	
+	// Test comment
 
 	private String text;
 	public String getText() {
