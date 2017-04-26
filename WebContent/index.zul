@@ -1,12 +1,12 @@
 <window  style="background: #581189" title="Ćirilično-Latinični prevodilac teksta" width="600px" border="normal" apply="org.zkoss.bind.BindComposer"
-    viewModel="@id('vm') @init('rs.ac.singidunum.ZKCyrillicLatinConverter')">
+    viewModel="@id('vm') @init('com.purplemagic.converter.ZKCyrillicLatinConverter')">
     <caption style="font-weight:bold; font-size:13px" />
     <hbox >
         Tekst:
         <textbox value="@bind(vm.text)" width="333px" placeholder="Unesite neki tekst..." onOK="@command('prevedi')" />
         <button label="Prevedi" image="img/search.png" onClick="@command('prevedi')" />
     </hbox>
-	<listbox height="160px" vflex="true" model="@bind(vm.prikazaniPrevod)" emptyMessage="Nijе unet nijedan tekst za konvertovanje"
+	<listbox height="160px" vflex="true" model="@bind(vm.prikazaniPrevod)" emptyMessage="Nije unet nijedan tekst za konvertovanje"
     selectedItem="@bind(vm.prikazaniPrevod)" style="margin-top:10px">
     	<listhead>
 			<listheader label="Konvertovani tekst"></listheader>
