@@ -9,8 +9,6 @@ import org.zkoss.bind.annotation.NotifyChange;
 
 public class ZKCyrillicLatinConverter {
 	
-	// Test comment
-
 	private String text;
 	public String getText() {
 		return text;
